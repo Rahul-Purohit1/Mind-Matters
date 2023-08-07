@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+}
+.logo_main {
+  width: 7.8rem;
+  margin-left: 1rem;
+}
+.navbarbody {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.navbarbody h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+}
+.linksparentbody {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbarlinks {
+  display: flex;
+  align-items: center;
+
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.links {
+  margin-right: 12rem;
+}
+
+.navbarlinks > h4:hover {
+  border-bottom: solid;
+  border-color: #2d6056;
+}
+
+.navbarlinks > h4 > a {
+  text-decoration: none;
+  color: #413d45;
+}
+.signup_btn {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 1.6rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #ff7e1d;
+  box-shadow: 0rem 0.2rem 0rem rgba(65, 61, 69, 0.2);
+  color: white;
+}
+
+.login_btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: #141414;
+}
+.both_btn {
+  margin-right: 4rem;
+}
+
+.signup_btn:hover {
+  background-color: rgb(131, 36, 255);
+}
+
+.login_btn:hover {
+  color: rgb(131, 36, 255);
+}
+
+.closeicon {
+  display: none;
+}
+.hideclass {
+  display: block;
+}
+.showclass {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .navbarbody {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .hideclass {
+    display: none;
+  }
+  .showclass {
+    display: block;
+  }
+  .closeicon {
+    display: block;
+    font-size: 2rem;
+  }
+  .linksparentbody {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+  }
+  .logo_main {
+    width: 7rem;
+    /* margin-left: 1rem; */
+  }
+  .navbarlinks {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  .links,
+  .both_btn {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Adjust font size and spacing for medium-sized screens */
+  html {
+    font-size: 50%;
+  }
+
+  /* Simplify navbar links style for medium-sized screens */
+  .navbarlinks {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Further adjust font size and spacing for smaller medium-sized screens */
+  html {
+    font-size: 45%;
+  }
+
+  /* Adjust logo size for smaller medium-sized screens */
+  .logo_main {
+    width: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust font size and spacing for tablets and smaller laptops */
+  html {
+    font-size: 40%;
+  }
+
+  /* Simplify navbar layout and link styles for tablets */
+  .navbarbody {
+    padding: 1rem;
+  }
+
+  .linksparentbody {
+    gap: 1.5rem;
+  }
+
+  .navbarlinks {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+    gap: 1.5rem;
+  }
+
+  .links,
+  .both_btn {
+    margin-right: 1rem;
+  }
+
+  /* Adjust button font size for tablets */
+  .signup_btn,
+  .login_btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust font size and spacing for smaller phones */
+  html {
+    font-size: 35%;
+  }
+
+  /* Simplify navbar layout and link styles for smaller phones */
+  .navbarbody {
+    padding: 0.8rem;
+  }
+
+  .logo_main {
+    width: 5.5rem;
+  }
+
+  .navbarlinks {
+    margin-left: 0.3rem;
+    font-size: 1.4rem;
+    gap: 1rem;
+  }
+
+  .links,
+  .both_btn {
+    margin-right: 0.5rem;
+  }
+
+  /* Adjust button font size for smaller phones */
+  .signup_btn,
+  .login_btn {
+    font-size: 1.2rem;
+  }
+}
