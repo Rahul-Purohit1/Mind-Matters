@@ -1,0 +1,50 @@
+.cardparent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.cardbody {
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.3rem;
+  width: 20rem;
+  height: auto;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardbody > img {
+  border-radius: 1rem 1rem 0rem 0rem;
+  max-height: 10rem;
+  object-fit: cover;
+  width: 100%;
+}
+.cardtext {
+  padding: 1rem;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+.cardtext > h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+.cardtext > p {
+  font-size: 1rem;
+  color: grey;
+}
+.cardbody > button {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
+  background-color: #bdf1e4;
+  bottom: 1rem;
+}
+.cardbody > button:hover {
+  background-color: #a25cff;
+  color: #ffffff;
+  cursor: pointer;
+}

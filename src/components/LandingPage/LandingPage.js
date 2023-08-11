@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import "../LandingPage/landingpage.css";
 import floating from "../../img/frame.svg";
-
+import Carousal from "../Carousal/Carousal";
 const LandingPage = () => {
   return (
     <>
@@ -34,7 +34,7 @@ const LandingPage = () => {
           />
         </div>
       </div>
-
+      <Carousal />
       <Footer />
     </>
   );
