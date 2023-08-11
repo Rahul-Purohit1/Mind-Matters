@@ -103,7 +103,7 @@ function Footer() {
       </div>
       <div className="footer-copyright">
         <hr />
-        <p>© Made with ❤ by Code Crafters.</p>
+        <p>© Made with ❤.</p>
       </div>
     </div>
   );
