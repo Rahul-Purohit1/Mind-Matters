@@ -2,16 +2,15 @@
 html {
   font-size: 62.5%;
 }
-.heading_section {
-  display: block;
+/* .heading_section {
   width: 100%;
   height: auto;
-}
+} */
 
 .upperContainer {
   display: flex;
-  /* flex-wrap: wrap-reverse; */
-  gap: 2rem;
+  justify-content: center;
+  gap: 25rem;
   margin-top: 5rem;
   width: 100%;
   height: 40rem;
@@ -19,10 +18,8 @@ html {
 .left_container_upper {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
-  margin-left: 1rem;
-  width: 30%;
-  gap: rem;
+  gap: 2rem;
+  width: 35%;
 }
 .left_container_upper h1 {
   color: #141414;
@@ -50,8 +47,12 @@ html {
   margin-top: 0rem;
 }
 .upper_btn {
+  align-items: center;
+  justify-content: center;
   background-color: #ff7e1d;
-  padding: 1rem 2.5rem;
+  width: 15rem;
+  height: auto;
+  padding: 0.5rem;
   color: #fff;
   text-transform: uppercase;
   border: rgb(158, 158, 158);
@@ -72,14 +73,11 @@ html {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
+
   max-width: 100%;
 }
 .flt_img {
   width: 40rem;
-  margin-top: 4rem;
-  margin-left: 25rem;
 }
 
 @keyframes floating {
@@ -93,13 +91,62 @@ html {
     transform: translate(0, -0px);
   }
 }
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
 }
 
 @media (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
   .upperContainer {
+    text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-top: 3rem;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .left_container_upper {
+    gap: 2rem;
+    width: 100%;
+    height: 40%;
+  }
+  .right_upper_container {
+    display: flex;
+    justify-content: center;
+    height: 40%;
+  }
+
+  .buttons_upper_container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .left_container_upper h4 {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 2rem;
+    font-style: normal;
+    margin: 0 auto;
+    font-weight: 400;
+    width: 80%;
+  }
+  .buttons_upper_container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 3rem;
   }
 }

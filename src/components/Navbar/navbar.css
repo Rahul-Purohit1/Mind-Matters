@@ -3,9 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
-}
+
 .logo_main {
   width: 7.8rem;
   margin-left: 1rem;
@@ -36,10 +34,6 @@ html {
   font-size: 2rem;
   gap: 2rem;
   cursor: pointer;
-}
-
-.links {
-  margin-right: 12rem;
 }
 
 .navbarlinks > h4:hover {
@@ -73,9 +67,6 @@ html {
 
   color: #141414;
 }
-.both_btn {
-  margin-right: 4rem;
-}
 
 .signup_btn:hover {
   background-color: rgb(131, 36, 255);
@@ -94,12 +85,14 @@ html {
 .showclass {
   display: block;
 }
+.links {
+  margin-left: -2rem;
+}
 
 @media screen and (max-width: 600px) {
   .navbarbody {
     display: flex;
     flex-direction: column;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
@@ -113,7 +106,7 @@ html {
   }
   .closeicon {
     display: block;
-    font-size: 2rem;
+    font-size: 4rem;
   }
   .linksparentbody {
     display: flex;
@@ -139,15 +132,23 @@ html {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  /* Adjust font size and spacing for medium-sized screens */
-  html {
-    font-size: 50%;
-  }
-
-  /* Simplify navbar links style for medium-sized screens */
+@media screen and (max-width: 768px) {
   .navbarlinks {
     margin-left: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbarlinks {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 1.7rem;
+    gap: 1rem;
+    cursor: pointer;
   }
 }
