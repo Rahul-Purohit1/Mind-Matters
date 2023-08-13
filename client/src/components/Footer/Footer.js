@@ -1,5 +1,6 @@
 import React from "react";
 import "../Footer/footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -29,18 +30,18 @@ function Footer() {
             <h4>Quick Links</h4>
           </div>
           <div className="footer-links">
-            <a href="#" className="footer-link">
+            <Link href="#" className="footer-link">
               Home
-            </a>
-            <a href="#" className="footer-link">
+            </Link>
+            <Link to="#" className="footer-link">
               SignUp
-            </a>
-            <a href="#" className="footer-link">
+            </Link>
+            <Link to="#" className="footer-link">
               Contact
-            </a>
-            <a href="#" className="footer-link">
+            </Link>
+            <Link to="#" className="footer-link">
               Therapy
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -49,18 +50,18 @@ function Footer() {
             <h4>Support</h4>
           </div>
           <div className="footer-links">
-            <a href="#" className="footer-link">
+            <Link to="#" className="footer-link">
               Blog
-            </a>
-            <a href="#" className="footer-link">
+            </Link>
+            <Link to="#" className="footer-link">
               Community
-            </a>
-            <a href="#" className="footer-link">
+            </Link>
+            <Link to="#" className="footer-link">
               Contribution
-            </a>
-            <a href="#" className="footer-link">
+            </Link>
+            <Link to="#" className="footer-link">
               Feedback Form
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -84,18 +85,18 @@ function Footer() {
             <div className="follow">
               <h4>Follow us</h4>
               <div className="social-icons">
-                <a href="#">
+                <Link to="#">
                   <i className="social-icon ri-facebook-fill"></i>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <i className="social-icon ri-instagram-line"></i>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <i className="social-icon ri-linkedin-fill"></i>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <i className="social-icon ri-github-line"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

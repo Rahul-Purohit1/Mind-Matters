@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "../Navbar/navbar.css";
 import logo from "../../img/open-mind.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"; //  npm install react-icons --save
+import { Link } from "react-router-dom";
+
+
 function Navbar() {
   const [showbutton, setShowButoon] = useState(false);
   return (
@@ -32,34 +35,34 @@ function Navbar() {
         <div className="navbarlinks">
           <div className="navbarlinks links">
             <h4>
-              <a href="#" target="_blank">
+              <Link to="/" target="_blank">
                 Wellness Hub
-              </a>
+              </Link>
             </h4>
             <h4>
-              <a href="https://mindmattersblog.netlify.app/" target="_blank">
+              <Link to="https://mindmattersblog.netlify.app/" target="_blank">
                 Blogs
-              </a>
+              </Link>
             </h4>
             <h4>
-              <a href="#" target="_blank">
+              <Link to="#" target="_blank">
                 Therapy
-              </a>
+              </Link>
             </h4>
             <h4>
-              <a href="#" target="_blank">
+              <Link to="#" target="_blank">
                 Self Healing
-              </a>
+              </Link>
             </h4>
             <h4>
-              <a href="#" target="_blank">
+              <Link to="#" target="_blank">
                 How it works
-              </a>
+              </Link>
             </h4>
             <h4>
-              <a href="#" target="_blank">
+              <Link to="#" target="_blank">
                 About Us
-              </a>
+              </Link>
             </h4>
           </div>
 
