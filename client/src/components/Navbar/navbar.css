@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo_main {
+  width: 7.8rem;
+  margin-left: 1rem;
+}
+.navbarbody {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.navbarbody h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+}
+.linksparentbody {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbarlinks {
+  display: flex;
+  align-items: center;
+
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.navbarlinks > h4:hover {
+  border-bottom: solid;
+  border-color: #2d6056;
+}
+
+.navbarlinks > h4 > a {
+  text-decoration: none;
+  color: #413d45;
+}
+.signup_btn {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 1.6rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #ff7e1d;
+  box-shadow: 0rem 0.2rem 0rem rgba(65, 61, 69, 0.2);
+  color: white;
+}
+
+.login_btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: #141414;
+}
+
+.signup_btn:hover {
+  background-color: rgb(131, 36, 255);
+}
+
+.login_btn:hover {
+  color: rgb(131, 36, 255);
+}
+
+.closeicon {
+  display: none;
+}
+.hideclass {
+  display: block;
+}
+.showclass {
+  display: block;
+}
+.links {
+  margin-left: -2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .navbarbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .hideclass {
+    display: none;
+  }
+  .showclass {
+    display: block;
+  }
+  .closeicon {
+    display: block;
+    font-size: 4rem;
+  }
+  .linksparentbody {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+  }
+  .logo_main {
+    width: 7rem;
+    /* margin-left: 1rem; */
+  }
+  .navbarlinks {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  .links,
+  .both_btn {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbarlinks {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbarlinks {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 1.7rem;
+    gap: 1rem;
+    cursor: pointer;
+  }
+}
