@@ -4,7 +4,6 @@ import logo from "../../img/open-mind.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"; //  npm install react-icons --save
 import { Link } from "react-router-dom";
 
-
 function Navbar() {
   const [showbutton, setShowButoon] = useState(false);
   return (
@@ -67,8 +66,12 @@ function Navbar() {
           </div>
 
           <div className="both_btn">
-            <button className="login_btn">Login</button>
-            <button className="signup_btn">Sign Up</button>
+            <Link to="/login">
+              <button className="login_btn">Login</button>
+            </Link>
+            <Link to="/register">
+              <button className="signup_btn">Sign Up</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -77,5 +80,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
