@@ -34,7 +34,7 @@ const LandingPage = () => {
           />
         </div>
       </div>
-      <Carousal />
+      {/* <Carousal /> */}
       <Footer />
     </>
   );

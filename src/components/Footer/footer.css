@@ -18,13 +18,13 @@ h2 {
   /* position: relative; */
   border-top-left-radius: 7rem;
   font-size: 1rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .footer-main {
   margin: 5rem;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   display: grid;
   gap: 5rem;
   grid-template-columns: repeat(4, 1fr);
